@@ -2,5 +2,6 @@
     "env":{
         "url":"https://www.saucedemo.com/"
     },
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "testFiles":"**/*.feature"
 }
