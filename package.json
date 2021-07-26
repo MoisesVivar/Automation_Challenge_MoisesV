@@ -1,0 +1,21 @@
+{
+  "name": "automation_challenge_moisesv",
+  "version": "1.0.0",
+  "description": "Package for the challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Wizeline"
+  ],
+  "author": "Moisés Vivar Montoya",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.5.0",
+    "cypress-cucumber-preprocessor": "^4.1.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
