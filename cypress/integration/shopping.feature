@@ -14,9 +14,15 @@
         And User clicks on the logout button
         Then User navigates to the login page
 
-        Scenario: Sort products by Price (low to high)
-        When User selects 'Price (low to high)' option
-        Then User must see products ordered by 'Price (low to high)'
+        Scenario Outline: Sort products by Criteria
+        When User selects '<filter option>' option
+        Then User must see products ordered by '<filter option>'
+        Examples:
+            | filter option       |
+            | Name (A to Z)       |
+            | Name (Z to A)       |
+            | Price (low to high) |
+            | Price (high to low) |
 
         Scenario: Add multiple items to the shopping cart.
         When User adds the following products to the shopping cart:
