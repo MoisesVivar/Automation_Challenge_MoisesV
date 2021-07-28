@@ -6,9 +6,7 @@
 
         Background: The user is already logged in
         Given User visits the main page
-        When User types the username: 'standard_user'
-        And User types the password: 'secret_sauce'
-        And User clicks on the login button
+        When User logs in with the username: 'standard_user' and password: 'secret_sauce'
         Then User navigates to the products page when logged in
 
         Scenario: Logout from the home page

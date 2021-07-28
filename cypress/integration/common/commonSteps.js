@@ -9,15 +9,9 @@ Given("User visits the main page",()=>{
     cy.clearCookies({ log: true})
 })
 
-When("User types the username: {string}",(username)=>{
+When("User logs in with the username: {string} and password: {string}",(username,password)=>{
     loginPage.typeUsername(username)
-})
-
-And("User types the password: {string}",(password)=>{
     loginPage.typePassword(password)
-})
-
-And("User clicks on the login button",()=>{
     loginPage.clickLogin()
 })
 
