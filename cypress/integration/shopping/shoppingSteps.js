@@ -24,14 +24,6 @@ Then("User must see products ordered by {string}",(option)=>{
     homePage.verifyDataIsSorted(option)
 })
 
-When("User adds the following products to the shopping cart:", (products) => {
-    homePage.addProducts(products)
-})
-
-And("User opens the shopping cart", ()=>{
-    homePage.selectShoppingCart()
-})
-
 Then("User must see the products added to the shopping cart",(products)=>{
     shoppingCartPage.verifySelectedProducts(products)
 })
