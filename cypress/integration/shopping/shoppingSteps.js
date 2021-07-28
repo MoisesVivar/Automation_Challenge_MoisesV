@@ -1,7 +1,8 @@
 /// <reference types="Cypress" />
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps"
-import homePage from "../pages/homePage"
 import loginPage from "../pages/loginPage"
+import homePage from "../pages/homePage"
+import shoppingCartPage from "../pages/shoppingCartPage"
 
 When("User clicks on the right upper corner burger button",()=>{
     homePage.clickBurgerButton()
@@ -32,5 +33,5 @@ And("User opens the shopping cart", ()=>{
 })
 
 Then("User must see the products added to the shopping cart",(products)=>{
-    homePage.verifySelectedProducts(products)
+    shoppingCartPage.verifySelectedProducts(products)
 })

@@ -1,7 +1,8 @@
-    Feature: Home page
+    Feature: Shopping
     
-        The home page is where the user can check products to buy. The user can customize the visibility of the products,
-        sorting them by Name and Price, and add them to the shopping cart for its purchase
+        This is the feature related to the selection of the products to be bought before checkout.
+        This feature must allow you to customize the visibility order of the products and add them to a 
+        shopping cart.
 
         Background: The user is already logged in
         Given User visits the main page
@@ -18,18 +19,6 @@
         Scenario: Sort products by Price (low to high)
         When User selects 'Price (low to high)' option
         Then User must see products ordered by 'Price (low to high)'
-
-        Scenario: Sort products by Price (high to low)
-        When User selects 'Price (high to low)' option
-        Then User must see products ordered by 'Price (high to low)'        
-
-        Scenario: Sort products by Name (A to Z)
-        When User selects 'Name (A to Z)' option
-        Then User must see products ordered by 'Name (A to Z)'
-
-        Scenario: Sort products by Name (Z to A)
-        When User selects 'Name (Z to A)' option
-        Then User must see products ordered by 'Name (Z to A)'
 
         Scenario: Add multiple items to the shopping cart.
         When User adds the following products to the shopping cart:
@@ -48,6 +37,7 @@
         And User opens the shopping cart
         Then User must see the products added to the shopping cart
             | Sauce Labs Onesie |
+
 
 
 

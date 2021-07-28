@@ -35,9 +35,4 @@ export default class homePage{
     static selectShoppingCart(){
         cy.get(".shopping_cart_link").click()
     }
-    static verifySelectedProducts(products){
-        products.rawTable.forEach(product => {
-            cy.get(".cart_item_label a .inventory_item_name").should("include.text",product[0])
-        })
-    }
 }
