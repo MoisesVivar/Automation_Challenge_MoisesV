@@ -5,6 +5,7 @@ import homePage from "../pages/homePage"
 
 Given("User visits the main page",()=>{
     cy.visit(Cypress.env("url"))
+    loginPage.verifyLoginPage()
     cy.clearCookies({ log: true})
 })
 
@@ -21,6 +22,6 @@ And("User clicks on the login button",()=>{
 })
 
 Then("User navigates to the products page when logged in",()=>{
-    homePage.assertHomePageTitle()
+    homePage.verifyHomePageTitle()
 })
 

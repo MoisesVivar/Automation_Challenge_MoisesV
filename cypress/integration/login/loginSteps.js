@@ -3,5 +3,5 @@ import { Given, When, Then, And } from "cypress-cucumber-preprocessor/st
 import loginPage from "../pages/loginPage"
 
 Then("User must see the message: {string}",(message)=>{
-    loginPage.assertingErrorMessage(message)
+    loginPage.verifyErrorMessage(message)
 })

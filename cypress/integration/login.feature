@@ -3,7 +3,7 @@ Feature: Login page
     The login feature is used to authenticate users from the SWAGLABS page, 
     in order to begin shopping articles
 
-    Background: 
+    Background: User is already in the main page
     Given User visits the main page
 
     Scenario Outline: Login with a valid user

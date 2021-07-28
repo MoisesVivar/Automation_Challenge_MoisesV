@@ -8,7 +8,10 @@ export default class loginPage{
     static clickLogin(){
         cy.get("#login-button").click()
     }
-    static assertingErrorMessage(message){
+    static verifyErrorMessage(message){
         cy.get("h3[data-test='error']").should("have.text",message).and("be.visible")
+    }
+    static verifyLoginPage(){
+        cy.url().should("eq",Cypress.env("url"))
     }
 }
