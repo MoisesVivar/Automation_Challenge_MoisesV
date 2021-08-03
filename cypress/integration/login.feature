@@ -5,7 +5,7 @@ Feature: Login page
 
     Background: User is already in the main page
     Given User visits the main page
-
+    @Scenario1
     Scenario Outline: Login with a valid user
     When User types the username: '<username>'
     And User types the password: '<password>'
@@ -14,10 +14,9 @@ Feature: Login page
     Examples:
         | username                | password     |
         | standard_user           | secret_sauce |
-        | locked_out_user         | secret_sauce |
         | problem_user            | secret_sauce |
         | performance_glitch_user | secret_sauce |
-
+    @Scenario2
     Scenario Outline: Login with an invalid user.
     When User types the username: '<username>'
     And User types the password: '<password>'

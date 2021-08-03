@@ -12,7 +12,7 @@ Feature: Checkout
         | Sauce Labs Onesie |
     And User opens the shopping cart
     Then User must be redirected to 'Your Cart' page
-
+    @Scenario7
     Scenario: Complete a purchase.
     Given User clicks on the Checkout button
     Then User must be redirected to 'Checkout: Your Information' page
