@@ -26,7 +26,7 @@ As a quick reminder, the scenarios for the challenge are:
 1. **Scenario1**  Login with a valid user.
 2. **Scenario2**  Login with an invalid user.
 3. **Scenario3**  Logout from the home page.
-3. **Scenario4**  Sort products by Price (low to high).
+4. **Scenario4**  Sort products by Price (low to high).
 5. **Scenario5**  Add multiple items to the shopping cart.
 6. **Scenario6**  Add the specific product ‘Sauce Labs Onesie’ to the shopping cart.
 7. **Scenario7**  Complete a purchase.
@@ -63,11 +63,47 @@ npm run Scenario1
 
 You can switch between browsers and change the headed mode by adding the corresponding flags to the scripts on the `package.json` file
 
+**Running scenarios by Feature**
+
+I organized all the scenarios by features. The 3 main features, with their corresponding scenarios, are:
+
+* Login feature
+  - Scenario1  Login with a valid user.
+  - Scenario2  Login with an invalid user.
+* Shopping feature
+  - Scenario3  Logout from the home page.
+  - Scenario4  Sort products by Price (low to high).
+  - Scenario5  Add multiple items to the shopping cart.
+  - Scenario6  Add the specific product ‘Sauce Labs Onesie’ to the shopping cart.
+* Checkout feature
+  - Scenario7  Complete a purchase.
+
+You can run a complete feature by either using the command line or the Cypress inteface.
+
+In the CLI type the following command to run the *Shopping* feature:
+
+```
+npx cypress run --spec cypress\integration\shopping.feature
+```
+
+>Change the name of the feature you want to run to the previous command
+
+Use the Cypress interface instead by using the command:
+
+```
+npx cypress open
+```
+
+You will be redirected to the Cypress interface where you can choose the feature to run and customize the settings.
 
 
+**Additional Scenarios**
 
+There is a branch in the repository called *allFilters* where I added all the filtering Scenarios. These are:
 
+* Name (A to Z) 
+* Name (Z to A) 
+* Price (low to high)
+* Price (high to low)
 
-
-
-
+Please take a look of them.
