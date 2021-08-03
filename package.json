@@ -4,7 +4,13 @@
   "description": "Package for the challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "Scenario1": "npx cypress-tags run -e TAGS='@Scenario1' --browser chrome",
+    "Scenario2": "npx cypress-tags run -e TAGS='@Scenario2' --browser chrome",
+    "Scenario3": "npx cypress-tags run -e TAGS='@Scenario3' --browser chrome",
+    "Scenario4": "npx cypress-tags run -e TAGS='@Scenario4' --browser chrome",
+    "Scenario5": "npx cypress-tags run -e TAGS='@Scenario5' --browser chrome",
+    "Scenario6": "npx cypress-tags run -e TAGS='@Scenario6' --browser chrome",
+    "Scenario7": "npx cypress-tags run -e TAGS='@Scenario7' --browser chrome"  
   },
   "keywords": [
     "Wizeline"

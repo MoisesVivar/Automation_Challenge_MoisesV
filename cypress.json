@@ -3,5 +3,6 @@
         "url":"https://www.saucedemo.com/"
     },
     "chromeWebSecurity": false,
-    "testFiles":"**/*.feature"
+    "testFiles":"**/*.feature",
+    "video": false
 }
